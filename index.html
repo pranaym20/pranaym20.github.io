@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><script>document.documentElement.classList.add("js")</script>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,11 +13,11 @@
 <meta property="og:image" content="https://pranaym20.github.io/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@pranaymishra_">
-<meta name="theme-color" content="#09080C">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309080C'/%3E%3Ctext x='32' y='44' font-family='Arial Black,sans-serif' font-size='34' font-weight='900' text-anchor='middle' fill='%23D97706'%3EP%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A0B0D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230A0B0D'/%3E%3Crect x='10' y='22' width='16' height='20' fill='none' stroke='%23ECEEF1' stroke-width='3'/%3E%3Crect x='38' y='22' width='16' height='20' fill='none' stroke='%23ECEEF1' stroke-width='3'/%3E%3Cpath d='M26 32h12' stroke='%2345CF8B' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@500;600&family=Funnel+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,7 +29,7 @@
       "jobTitle": "Digital Transformation & RevOps Consultant",
       "description": "Digital transformation, revenue operations and sales operations consultant. Salesforce, HubSpot, AI agents and workflow automation.",
       "url": "https://pranaym20.github.io/",
-      "image": "https://pranaym20.github.io/og.png",
+      "image": "https://pranaym20.github.io/pranay.webp",
       "address": {"@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN"},
       "knowsAbout": ["Digital transformation", "Revenue operations", "Sales operations", "Salesforce", "HubSpot", "Marketo to HubSpot migration", "Lead routing", "Pipeline management", "Sales forecasting", "AI agents", "Workflow automation", "Claude"],
       "sameAs": ["https://github.com/pranaym20", "https://www.linkedin.com/in/pranaymishra/", "https://x.com/pranaymishra_"]
@@ -48,7 +48,8 @@
         {"@type": "Question", "name": "Do I need a new CRM, or better processes?", "acceptedAnswer": {"@type": "Answer", "text": "Usually better processes. Most 'the CRM is broken' problems are really routing problems, definitions nobody agreed on, or data nobody owned. Fix those first; switching tools on top of a broken process moves the mess somewhere more expensive."}},
         {"@type": "Question", "name": "Salesforce or HubSpot?", "acceptedAnswer": {"@type": "Answer", "text": "HubSpot if you're under about 100 sellers, marketing-led and want speed. Salesforce if you have complex territories, several business units or heavy customisation needs."}},
         {"@type": "Question", "name": "What can AI really automate in sales operations today?", "acceptedAnswer": {"@type": "Answer", "text": "Research, enrichment, routing, data cleanup, call summaries, CRM updates and report assembly. It shouldn't decide pricing, territories or forecasts on its own, and anything that writes to your CRM should have a human approving it."}},
-        {"@type": "Question", "name": "What's the difference between RevOps and sales ops?", "acceptedAnswer": {"@type": "Answer", "text": "Sales ops keeps the sales team running. RevOps puts marketing, sales and customer success on one set of data, definitions and tools, so the whole revenue engine can be measured and fixed as one system."}}
+        {"@type": "Question", "name": "What's the difference between RevOps and sales ops?", "acceptedAnswer": {"@type": "Answer", "text": "Sales ops keeps the sales team running. RevOps puts marketing, sales and customer success on one set of data, definitions and tools, so the whole revenue engine can be measured and fixed as one system."}},
+        {"@type": "Question", "name": "How does an engagement with Pranay Mishra start?", "acceptedAnswer": {"@type": "Answer", "text": "A free 30-minute call, then a short audit of your process and stack. You get a written plan with the highest-return fixes first, which Pranay can build or hand to your team."}}
       ]
     }
   ]
@@ -56,291 +57,624 @@
 </script>
 <style>
 :root{
-  --bg:#09080C;--s1:#0E0C09;--s2:#131009;--line:rgba(250,248,244,.09);
-  --amber:#D97706;--amber-hi:#F59E0B;--amber-dim:#92400E;--pale:#FDE68A;
-  --text:#FAF8F4;--muted:#C8BEB0;--faint:#8A8176;
-  --display:'Bricolage Grotesque',Georgia,serif;--body:'Geist',ui-sans-serif,system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;
+  --bg:#0A0B0D;--sheet:#0D0F12;--rule:#1D2026;--stroke:#3B4048;--stroke-hi:#5A616B;
+  --text:#ECEEF1;--muted:#A3A9B1;--faint:#80868F;
+  --signal:#45CF8B;--signal-ink:#03130A;
+  --display:'Funnel Display',ui-sans-serif,system-ui,sans-serif;
+  --body:'Funnel Sans',ui-sans-serif,system-ui,sans-serif;
+  --code:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+  --gut:clamp(20px,4vw,40px);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding-inline:24px}
-.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
-h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.03em;margin:0}
-h2{font-size:clamp(34px,5vw,56px);line-height:1.02;margin:14px 0 18px}
-.lede{color:var(--muted);max-width:620px;font-size:19px}
-section{padding-block:112px}
+html{scroll-behavior:smooth;scrollbar-color:var(--stroke) var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body);font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--signal);color:var(--signal-ink)}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-/* progress + nav */
-#progress{position:fixed;inset:0 auto auto 0;height:2px;width:0;background:linear-gradient(90deg,var(--amber),var(--amber-hi));z-index:50}
-nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);background:rgba(9,8,12,.7);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font:800 20px var(--display);text-decoration:none;letter-spacing:-.02em}
-.logo b{color:var(--amber)}
-.navlinks{display:flex;gap:28px;align-items:center;font-size:15px;color:var(--muted)}
-.navlinks a{text-decoration:none;transition:color .2s}.navlinks a:hover{color:var(--text)}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;background:var(--amber);color:#09080C;font-weight:600;text-decoration:none;transition:transform .2s,background .2s}
-.btn:hover{transform:translateY(-2px);background:var(--amber-hi)}
-.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
-.btn.ghost:hover{border-color:var(--amber);background:transparent}
-.btn.small{padding:9px 16px;font-size:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 20px;border-radius:6px;background:var(--signal);color:var(--signal-ink);font:600 16px/1 var(--body);text-decoration:none;transition:background .2s,transform .2s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:#5ADA9A}
+.btn:active{transform:translateY(1px)}
+.btn svg{transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.btn:hover svg{transform:translateX(3px)}
+.btn.sm{height:36px;padding:0 14px;font-size:14px}
+.link{color:var(--text);text-decoration:underline;text-decoration-color:var(--stroke-hi)}
+.link:hover{text-decoration-color:var(--signal)}
 
-/* hero */
-.hero{position:relative;padding-block:120px 96px;overflow:hidden}
-.aurora{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
-.a1{width:620px;height:620px;background:rgba(217,119,6,.32);top:-180px;right:-140px;animation:drift1 16s ease-in-out infinite alternate}
-.a2{width:520px;height:520px;background:rgba(146,64,14,.4);bottom:-260px;left:20%;animation:drift2 20s ease-in-out infinite alternate}
-@keyframes drift1{to{transform:translate(-220px,140px) scale(1.15)}}
-@keyframes drift2{to{transform:translate(200px,-120px) scale(.9)}}
-.dots{position:absolute;inset:0;background-image:radial-gradient(rgba(250,248,244,.07) 1px,transparent 1px);background-size:26px 26px;mask-image:linear-gradient(180deg,#000 40%,transparent)}
-.hero .wrap{position:relative}
-.status{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid rgba(217,119,6,.35);border-radius:999px;background:var(--s2);font:500 12px var(--mono);letter-spacing:.12em;color:var(--pale)}
-.pulse{width:8px;height:8px;border-radius:50%;background:var(--amber-hi);box-shadow:0 0 0 0 rgba(245,158,11,.7);animation:pulse 1.8s infinite}
-@keyframes pulse{to{box-shadow:0 0 0 12px rgba(245,158,11,0)}}
-.hero h1{font-size:clamp(52px,9.5vw,124px);line-height:.92;margin:28px 0 26px}
-.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom}
-.hero h1 .w span{display:inline-block;transform:translateY(105%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
-.hero h1 em{font-style:normal;color:var(--amber)}
-@keyframes up{to{transform:none}}
-.hero .lede{font-size:clamp(18px,2vw,22px);max-width:700px}
-.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
-.beam{height:2px;max-width:560px;margin-top:56px;background:linear-gradient(90deg,var(--amber),var(--amber-hi) 70%,transparent);transform-origin:left;transform:scaleX(0);animation:beam 1.8s .7s cubic-bezier(.6,0,.2,1) forwards}
-@keyframes beam{to{transform:scaleX(1)}}
-.trust{margin-top:22px;color:var(--faint);font-size:14px}
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(10,11,13,.94);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav .me{font:600 16px var(--display);text-decoration:none;letter-spacing:-.01em}
+.nav ul{display:flex;align-items:center;gap:28px;list-style:none;margin:0;padding:0;font-size:15px;color:var(--muted)}
+.nav ul a{text-decoration:none}
+.nav ul a:not(.btn):hover{color:var(--text)}
 
-/* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:24px;background:var(--s1);overflow:hidden;position:relative}
-.stat{padding:34px 30px;border-right:1px solid var(--line)}
-.stat:last-child{border-right:0}
-.stat .num{font:800 clamp(40px,5vw,60px)/1 var(--display);letter-spacing:-.04em;margin:14px 0 12px}
-.stat p{margin:0;color:var(--muted);font-size:15px;line-height:1.45}
+/* masthead */
+.mast{padding-block:clamp(20px,3vh,32px) clamp(22px,3vh,28px)}
+.who{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.who img{width:52px;height:52px;border-radius:50%;filter:grayscale(1) contrast(1.05);border:1px solid var(--stroke)}
+.who b{display:block;font:600 16px/1.3 var(--display)}
+.who span{color:var(--muted);font-size:15px;line-height:1.3}
+.mast-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:28px 56px;align-items:end}
+h1{font-size:clamp(38px,4.3vw,60px);line-height:1.02;letter-spacing:-.035em;max-width:19ch}
+.pitch{color:var(--muted);font-size:17px;max-width:44ch}
+.pitch strong{color:var(--text);font-weight:500}
+.act{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:22px}
+.act .note{font-size:14px;color:var(--faint)}
 
-/* bento */
-.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:48px;perspective:1200px}
-.card{--mx:50%;--my:50%;position:relative;padding:32px;border-radius:22px;background:var(--s1);border:1px solid var(--line);transition:transform .25s ease,border-color .3s;transform-style:preserve-3d;overflow:hidden}
-.card::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx) var(--my),rgba(217,119,6,.16),transparent 45%);opacity:0;transition:opacity .3s}
-.card:hover{border-color:rgba(217,119,6,.45)}
-.card:hover::before{opacity:1}
-.card>*{position:relative}
-.bento>*,.case>*,.kit>*,.stats>*{min-width:0}
-.c-wide{grid-column:span 4}.c-narrow{grid-column:span 2}.c-half{grid-column:span 3}
-.card .ico{font-size:28px}
-.card h3{font-size:26px;margin:18px 0 10px;letter-spacing:-.02em}
-.card p{color:var(--muted);margin:0}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.tags span{font:500 12px var(--mono);padding:6px 10px;border-radius:8px;background:var(--s2);border:1px solid var(--line);color:var(--muted)}
+/* drawing sheet */
+.sheet{position:relative;margin-top:8px}
+#drawing svg{display:block;width:100%;height:auto;overflow:visible}
+.sheet text{font-family:var(--body);fill:var(--muted)}
+.frame{fill:var(--sheet);stroke:var(--rule)}
+.zone{font-size:10px;fill:var(--faint);letter-spacing:.04em}
+.tick{stroke:var(--rule)}
+.edge{fill:none;stroke:var(--stroke-hi);stroke-width:1.25}
+.edge.feed{stroke-dasharray:5 5}
+.arrow{fill:var(--stroke-hi)}
+.sig{fill:none;stroke:var(--signal);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:.035 .965;stroke-dashoffset:1;opacity:0}
+.node rect{fill:var(--sheet);stroke:var(--stroke);stroke-width:1.25;transition:stroke .25s,fill .25s}
+.node .lbl{font:500 14px var(--body);fill:var(--text)}
+.node .sub{font-size:11.5px;fill:var(--faint)}
+.node[tabindex]{cursor:pointer;outline:none}
+.node[tabindex]:hover rect,.node[tabindex]:focus-visible rect{stroke:var(--text)}
+.node.on rect{stroke:var(--signal);fill:#0F1A15}
+.node .det circle{fill:var(--bg);stroke:var(--stroke-hi)}
+.node .det text{font:600 10.5px var(--body);fill:var(--text)}
+.node.on .det circle{fill:var(--signal);stroke:var(--signal)}
+.node.on .det text{fill:var(--signal-ink)}
+.node:focus-visible rect{stroke-width:2}
+.node.end rect{stroke-width:2.5}
+.leader{fill:none;stroke:var(--stroke-hi);stroke-width:1}
+.leader-dot{fill:var(--stroke-hi)}
+.val{font:600 22px var(--display);fill:var(--text);letter-spacing:-.01em}
+.cl{font-size:12px;fill:var(--muted)}
+.tb rect{fill:none;stroke:var(--stroke)}
+.tb line{stroke:var(--stroke)}
+.tb .t1{font:600 12.5px var(--display);fill:var(--text)}
+.tb .t2{font-size:10.5px;fill:var(--faint)}
 
-/* work */
-.work{display:grid;gap:16px;margin-top:48px}
-.case{display:grid;grid-template-columns:240px 1fr;gap:32px;padding:34px;border-radius:22px;background:var(--s1);border:1px solid var(--line);transition:border-color .3s}
-.case:hover{border-color:rgba(217,119,6,.45)}
-.case .metric{font:800 52px/1 var(--display);letter-spacing:-.04em;color:var(--amber)}
-.case .mlabel{color:var(--muted);font-size:14px;margin-top:10px}
-.case h3{font-size:26px;letter-spacing:-.02em;margin-bottom:14px}
-.case dl{margin:0;display:grid;grid-template-columns:110px 1fr;gap:8px 18px}
-.case dt{font:500 12px/1.9 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.case dd{margin:0;color:var(--muted)}
+/* draw-on (only when JS + motion allowed) */
+.draw .edge,.draw .leader{stroke-dasharray:1;stroke-dashoffset:1;animation:plot .7s cubic-bezier(.3,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+.draw .node rect{stroke-dasharray:1;stroke-dashoffset:1;animation:plot .7s cubic-bezier(.3,.7,.2,1) forwards,fill .35s ease-out both;animation-delay:var(--d,0s),calc(var(--d,0s) + .55s)}
+@keyframes fill{from{fill:transparent}}
+.draw .edge.feed{stroke-dasharray:1;}
+.draw .node text,.draw .node .det,.draw .val,.draw .cl,.draw .dim text,.draw .arrow,.draw .leader-dot,.draw .tb{animation:fade .5s ease-out both;animation-delay:calc(var(--d,0s) + .35s)}
+.draw .edge.feed.done{stroke-dasharray:5 5}
+.live .sig{opacity:1;animation:run var(--t,3.2s) linear infinite;animation-delay:var(--sd,0s)}
+@keyframes plot{to{stroke-dashoffset:0}}
+@keyframes fade{from{opacity:0}}
+@keyframes run{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+
+/* notes box: overlay on wide sheet, panel below on narrow */
+.notes{position:absolute;left:2.6%;top:69.6%;width:46%;padding:14px 18px 16px;border:1px solid var(--stroke);background:var(--bg);display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.notes>div{display:grid;gap:4px}
+.notes .dl{width:26px;height:26px;border-radius:50%;background:var(--signal);color:var(--signal-ink);font:600 13px/26px var(--display);text-align:center;margin-top:2px}
+.notes h3{font-size:16px;line-height:1.3;letter-spacing:-.005em}
+.notes p{font-size:14px;line-height:1.45;color:var(--muted)}
+.notes a{font-size:14px;color:var(--text)}
+.notes .more{display:inline-flex;align-items:center;gap:6px}
+.dv{font:600 15px var(--display);fill:var(--text)}
+.notes a{justify-self:start;margin-top:4px}
+@media (min-width:1000px) and (max-width:1179px){.notes{position:relative;left:auto;top:auto;width:auto;margin-top:16px}}
+.hint{margin-top:14px;font-size:13px;color:var(--faint)}
+
+/* sections */
+section{padding-block:clamp(72px,11vw,128px);border-top:1px solid var(--rule)}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 64px;align-items:end;margin-bottom:clamp(36px,5vw,56px)}
+h2{font-size:clamp(30px,3.6vw,46px);line-height:1.06;letter-spacing:-.03em}
+.sh p{color:var(--muted);max-width:52ch}
+
+/* spec sheets */
+.spec{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1.25fr) minmax(0,.9fr);gap:28px 48px;padding-block:36px;border-top:1px solid var(--rule);scroll-margin-top:80px}
+.spec:last-child{border-bottom:1px solid var(--rule)}
+.spec .tag{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;border:1px solid var(--stroke-hi);font:600 13px var(--display);margin-bottom:16px}
+.spec:target .tag{background:var(--signal);border-color:var(--signal);color:var(--signal-ink)}
+.spec h3{font-size:clamp(21px,2vw,25px);line-height:1.2;letter-spacing:-.02em}
+.spec .ctx{margin-top:10px;color:var(--faint);font-size:14px}
+.spec dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 20px;font-size:16px}
+.spec dt{color:var(--faint);font-size:14px;padding-top:2px}
+.spec dd{margin:0;color:var(--muted)}
+.meas{margin:0;border-collapse:collapse;width:100%;align-self:start}
+.meas caption{text-align:left;font-size:13px;color:var(--faint);padding-bottom:10px}
+.meas th,.meas td{padding:11px 0;border-top:1px solid var(--rule);text-align:left;vertical-align:baseline}
+.meas th{font-weight:400;color:var(--muted);font-size:15px;padding-right:12px}
+.meas td{text-align:right;font:600 22px/1 var(--display);letter-spacing:-.01em;white-space:nowrap}
+.meas tr:last-child th,.meas tr:last-child td{border-bottom:1px solid var(--rule)}
+
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1fr);gap:12px 48px;padding-block:26px;border-top:1px solid var(--rule)}
+.svc:last-of-type{border-bottom:1px solid var(--rule)}
+.svc h3{font-size:21px;line-height:1.25;letter-spacing:-.015em}
+.svc p{color:var(--muted)}
+.svc .tools{color:var(--faint);font-size:14px;padding-top:3px}
+.stack{margin-top:28px;color:var(--faint);font-size:15px;max-width:80ch}
+.stack span{color:var(--muted)}
 
 /* kit */
-.kit{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:center;padding:48px;border-radius:28px;border:1px solid rgba(217,119,6,.3);background:radial-gradient(700px circle at 100% 0,rgba(217,119,6,.14),transparent 60%),var(--s1)}
-.term{border-radius:16px;background:#050407;border:1px solid var(--line);font:500 13px/1.7 var(--mono);color:var(--muted);overflow:hidden}
-.term .bar{display:flex;gap:7px;padding:12px 14px;border-bottom:1px solid var(--line)}
-.term .bar i{width:11px;height:11px;border-radius:50%;background:#2a241c}
-.term pre{margin:0;padding:18px;overflow-x:auto;white-space:pre}
-.term .p{color:var(--amber)}.term .ok{color:var(--pale)}
-.caret{display:inline-block;width:8px;height:15px;background:var(--amber);vertical-align:-2px;animation:blink 1s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-
-/* tools marquee */
-.marquee{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);margin-top:40px}
-.track{display:flex;gap:14px;width:max-content;animation:scroll 38s linear infinite}
-.marquee:hover .track{animation-play-state:paused}
-.track span{padding:12px 20px;border-radius:999px;border:1px solid var(--line);background:var(--s1);white-space:nowrap;color:var(--muted);font-weight:500}
-@keyframes scroll{to{transform:translateX(-50%)}}
+.kit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:36px 64px;align-items:start}
+.kit h2 code{font:inherit}
+.kit p{color:var(--muted);margin-top:18px;max-width:46ch}
+.kit ul{margin:22px 0 0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.kit li{padding:11px 0;border-bottom:1px solid var(--rule);color:var(--muted);font-size:15px}
+.kit li b{color:var(--text);font-weight:500}
+.kit .act{margin-top:26px}
+.term{border:1px solid var(--stroke);background:#07080A;min-width:0}
+.term .cap{padding:10px 16px;border-bottom:1px solid var(--rule);font-size:13px;color:var(--faint)}
+.term pre{margin:0;padding:18px 16px 20px;overflow-x:auto;font:13.5px/1.7 var(--code);color:var(--muted);tab-size:2}
+.term .p{color:var(--faint)}.term .h{color:var(--text)}.term .r{color:var(--signal)}
 
 /* faq */
-.faq{margin-top:40px;border-top:1px solid var(--line)}
-.faq details{border-bottom:1px solid var(--line);padding:24px 0}
-.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font:600 22px/1.3 var(--display);letter-spacing:-.01em}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--amber);font-size:28px;line-height:1;transition:transform .3s}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq p{color:var(--muted);margin:14px 0 0;max-width:760px}
+.faq{margin:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);border-top:1px solid var(--rule)}
+.faq dt,.faq dd{padding-block:24px;border-bottom:1px solid var(--rule);margin:0}
+.faq dt{font:600 19px/1.35 var(--display);letter-spacing:-.01em;padding-right:40px}
+.faq dd{color:var(--muted);max-width:62ch}
 
-/* final cta */
-.final{text-align:center;padding:96px 32px;border-radius:32px;position:relative;overflow:hidden;background:var(--s1);border:1px solid var(--line)}
-.final h2{font-size:clamp(40px,6vw,76px)}
-.final .lede{margin:0 auto 34px}
-footer{padding-block:40px 56px;color:var(--faint);font-size:14px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
-footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--amber)}
+/* close */
+.close{padding-block:clamp(88px,13vw,150px)}
+.close-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px 64px;align-items:center}
+.blank{width:100%;height:auto;display:block}
+.blank text{font-family:var(--body)}
+.close h2{font-size:clamp(34px,4.1vw,56px);letter-spacing:-.035em;line-height:1.04}
+.close p{color:var(--muted);margin-top:20px;max-width:50ch;font-size:18px}
+.close .act{margin-top:30px}
+footer{border-top:1px solid var(--rule);padding-block:28px 40px;color:var(--faint);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--text)}
+footer nav{display:flex;gap:20px}
 
-/* reveal */
-.js .reveal{opacity:0;transform:translateY(28px);filter:blur(6px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1),filter .9s}
-.js .reveal.in{opacity:1;transform:none;filter:none}
-
-@media (max-width:860px){
-  .navlinks a:not(.btn){display:none}
-  .stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .c-wide,.c-narrow,.c-half{grid-column:span 6}
-  .case{grid-template-columns:1fr;gap:18px}
-  .kit{grid-template-columns:1fr;padding:28px}
-  section{padding-block:80px}
+@media (max-width:999px){
+  .sheet-in{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:28px;align-items:start}
+  .notes{position:sticky;top:76px;left:auto;width:auto;min-height:0;padding:18px}
+  .spec{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .spec>div:first-child{grid-column:1/-1}
+  .svc{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}
+  .svc .tools{grid-column:2}
 }
-@media (max-width:480px){.case dl{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}}
-@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}.hero h1 .w span,.beam{transform:none}.reveal{opacity:1;transform:none;filter:none}}
+@media (max-width:760px){
+  .nav ul li:not(:last-child){display:none}
+  .mast-grid,.sh,.kit,.close-grid{grid-template-columns:minmax(0,1fr)}
+  .sheet-in{grid-template-columns:minmax(0,1fr)}
+  #drawing svg{max-width:420px;margin-inline:auto}
+  .notes{position:relative;top:0}
+  .spec{grid-template-columns:minmax(0,1fr);gap:22px}
+  .svc{grid-template-columns:minmax(0,1fr);gap:8px}
+  .svc .tools{grid-column:auto}
+  .faq{grid-template-columns:minmax(0,1fr)}
+  .faq dt{border-bottom:0;padding-bottom:8px;padding-right:0}
+  .faq dd{padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .sig{display:none}
+}
 </style>
 </head>
 <body>
-<div id="progress"></div>
 
-<nav>
+<header class="nav">
   <div class="wrap">
-    <a class="logo" href="#top">Pranay<b>.</b></a>
-    <div class="navlinks">
-      <a href="#services">Services</a><a href="#work">Work</a><a href="#kit">Open source</a><a href="#faq">FAQ</a>
-      <a class="btn small" href="https://cal.com/pranaymishra/ai-gtm">Book a call</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero" id="top">
-  <div class="aurora a1"></div><div class="aurora a2"></div><div class="dots"></div>
-  <div class="wrap">
-    <span class="status"><span class="pulse"></span>TAKING NEW PROJECTS · US &amp; EU HOURS</span>
-    <h1><span class="w"><span>Sales&nbsp;ops</span></span> <span class="w"><span style="animation-delay:.08s">that</span></span><br><span class="w"><span style="animation-delay:.16s"><em>run&nbsp;themselves.</em></span></span></h1>
-    <p class="lede">I'm <strong style="color:var(--text)">Pranay Mishra</strong>, a digital transformation and RevOps consultant in Bangalore, India. I replace manual sales operations with Salesforce, HubSpot, AI agents and automation, so your reps sell and your data stays clean.</p>
-    <div class="cta-row">
-      <a class="btn" href="https://cal.com/pranaymishra/ai-gtm">Book a free 30-min call →</a>
-      <a class="btn ghost" href="#work">See the results</a>
-    </div>
-    <div class="beam"></div>
-    <p class="trust">10+ years in revenue systems · ran RevOps for 350+ Salesforce users and 100+ sellers across NA, EMEA &amp; APAC</p>
+    <a class="me" href="#top">Pranay Mishra</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#kit">Open source</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="btn sm" href="https://cal.com/pranaymishra/ai-gtm">Book a call</a></li>
+    </ul>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="stats reveal">
-    <div class="stat"><div class="eyebrow">Experience</div><div class="num" data-to="10" data-suffix="+ yrs">10+ yrs</div><p>in sales, operations and revenue systems</p></div>
-    <div class="stat"><div class="eyebrow">Automation</div><div class="num" data-to="50" data-suffix="K+">50K+</div><p>leads enriched and routed by AI every month</p></div>
-    <div class="stat"><div class="eyebrow">Pipeline</div><div class="num" data-to="2.4" data-prefix="$" data-suffix="M" data-dec="1">$2.4M</div><p>sourced pipeline in a rollout's first quarter</p></div>
-    <div class="stat"><div class="eyebrow">Efficiency</div><div class="num" data-to="60" data-prefix="−" data-suffix="%">−60%</div><p>manual data entry, with response time halved</p></div>
+<main id="top">
+  <div class="wrap mast">
+    <div class="who">
+      <img src="pranay.webp" alt="Pranay Mishra" width="52" height="52">
+      <div><b>Pranay Mishra</b><span>Digital transformation &amp; RevOps consultant · Bangalore, working US &amp; EU hours</span></div>
+    </div>
+    <div class="mast-grid">
+      <h1>I turn manual sales operations into systems that run themselves.</h1>
+      <div>
+        <p class="pitch">10+ years building revenue systems on <strong>Salesforce, HubSpot and AI agents</strong>. Below is one I ran for 350+ CRM users and 100+ sellers, with the numbers it produced.</p>
+        <div class="act">
+          <a class="btn" href="https://cal.com/pranaymishra/ai-gtm">Book a 30-minute call <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <span class="note">Free. You leave with three fixes.</span>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <section id="services">
-    <div class="reveal">
-      <div class="eyebrow">What I do</div>
-      <h2>Fix the process.<br>Then automate it.</h2>
-      <p class="lede">Four ways I help B2B revenue teams. Most engagements start with one and end up touching all four.</p>
-    </div>
-    <div class="bento">
-      <article class="card c-wide reveal"><div class="ico">🧭</div><h3>Digital transformation for revenue teams</h3><p>I map how leads, deals and data really move through your company, redesign the process, and fit the tech stack around it. Then I roll it out across teams and regions, with training that sticks.</p><div class="tags"><span>Process redesign</span><span>Stack audit</span><span>Change management</span><span>Global rollouts</span></div></article>
-      <article class="card c-narrow reveal"><div class="ico">📊</div><h3>RevOps &amp; sales ops</h3><p>Lead routing, territories, enrichment, CRM hygiene, pipeline reviews and forecasts that update themselves.</p></article>
-      <article class="card c-half reveal"><div class="ico">☁️</div><h3>Salesforce &amp; HubSpot</h3><p>CRM architecture, migrations, integrations and automation. One source of truth instead of five spreadsheets.</p><div class="tags"><span>Salesforce</span><span>HubSpot</span><span>Marketo → HubSpot</span></div></article>
-      <article class="card c-half reveal"><div class="ico">🤖</div><h3>AI agents &amp; automation</h3><p>Agents for account research, competitive intel, call insights and CRM updates, with a human approving anything that writes.</p><div class="tags"><span>Claude</span><span>Power Automate</span><span>n8n</span></div></article>
+  <div class="wrap">
+    <figure class="sheet" style="margin-inline:0;margin-bottom:0">
+      <div class="sheet-in">
+        <div id="drawing" role="group" aria-label="Revenue engine drawing. Select a stage to see the work behind it."></div>
+        <div class="notes" id="notes" aria-live="polite"></div>
+      </div>
+      <figcaption class="sr">
+        <ol>
+          <li>Lead capture in HubSpot after a zero-downtime Marketo to HubSpot migration; $150K+ a year saved across the stack.</li>
+          <li>AI enrichment of 50K+ leads a month, cutting manual data entry by 60%.</li>
+          <li>SLA-based routing, halving lead response time.</li>
+          <li>Salesforce CRM, with 20% more qualified leads; fed by AI agents live in three regions and an outbound sales engagement platform that sourced $2.4M of pipeline in its first quarter.</li>
+          <li>Weekly risk-scored pipeline review, open-sourced as revops-agent-kit.</li>
+          <li>Revenue.</li>
+        </ol>
+      </figcaption>
+    </figure>
+    <p class="hint" id="hint">Hover or tap a stage to see the work behind it.</p>
+  </div>
+
+  <section id="work" style="margin-top:clamp(56px,8vw,96px)">
+    <div class="wrap">
+      <div class="sh">
+        <h2>Four systems I've built, and what they changed.</h2>
+        <p>Five years running revenue operations for a global B2B intent-data company. Every number below is from production, not a pilot deck.</p>
+      </div>
+
+      <article class="spec" id="case-a">
+        <div><span class="tag" aria-hidden="true">A</span><h3>AI lead enrichment &amp; routing at 50K+ leads a month</h3><p class="ctx">Salesforce · AI enrichment · SLA routing</p></div>
+        <dl>
+          <dt>Problem</dt><dd>Inbound leads waited while they were enriched and assigned by hand, so reps followed up late.</dd>
+          <dt>What I did</dt><dd>Designed AI enrichment and SLA-based routing into Salesforce, with data-quality rules and pipeline hygiene on top.</dd>
+          <dt>Result</dt><dd>Every lead enriched and assigned automatically, with no queue.</dd>
+        </dl>
+        <table class="meas"><caption>Measured change</caption>
+          <tr><th scope="row">Leads handled a month</th><td>50K+</td></tr>
+          <tr><th scope="row">Manual data entry</th><td>−60%</td></tr>
+          <tr><th scope="row">Lead response time</th><td>−50%</td></tr>
+          <tr><th scope="row">Qualified leads</th><td>+20%</td></tr>
+        </table>
+      </article>
+
+      <article class="spec" id="case-b">
+        <div><span class="tag" aria-hidden="true">B</span><h3>Enterprise AI agents, from zero to production</h3><p class="ctx">Claude · Cassidy · Power Automate · Salesforce</p></div>
+        <dl>
+          <dt>Problem</dt><dd>Sellers researched buying groups and competitors by hand, and call insights never made it back into the CRM.</dd>
+          <dt>What I did</dt><dd>Built the company's first AI agents: buying-group research, competitive intelligence and sales-call insights, written back into Salesforce.</dd>
+          <dt>Result</dt><dd>In production and adopted across APAC, EMEA and the Americas.</dd>
+        </dl>
+        <table class="meas"><caption>Measured change</caption>
+          <tr><th scope="row">Regions in production</th><td>3</td></tr>
+        </table>
+      </article>
+
+      <article class="spec" id="case-c">
+        <div><span class="tag" aria-hidden="true">C</span><h3>Sales engagement rollout, pilot to global</h3><p class="ctx">Business case · 25-user pilot · 3 regions</p></div>
+        <dl>
+          <dt>Problem</dt><dd>The global sales team needed one prospecting platform it would actually use.</dd>
+          <dt>What I did</dt><dd>Wrote the business case, ran a 25-user pilot, then led the rollout and training across three regions.</dd>
+          <dt>Result</dt><dd>Outbound became a measurable pipeline source in its first quarter.</dd>
+        </dl>
+        <table class="meas"><caption>Measured change</caption>
+          <tr><th scope="row">Sourced pipeline, first quarter</th><td>$2.4M</td></tr>
+          <tr><th scope="row">Pilot users</th><td>25</td></tr>
+        </table>
+      </article>
+
+      <article class="spec" id="case-d">
+        <div><span class="tag" aria-hidden="true">D</span><h3>GTM stack consolidation &amp; Marketo → HubSpot</h3><p class="ctx">Stack audit · migration · change management</p></div>
+        <dl>
+          <dt>Problem</dt><dd>A legacy stack with overlapping tools that teams paid for and didn't use.</dd>
+          <dt>What I did</dt><dd>Replaced the legacy sales engagement stack globally and moved marketing automation from Marketo to HubSpot with zero downtime.</dd>
+          <dt>Result</dt><dd>Fewer tools, more of them actually used.</dd>
+        </dl>
+        <table class="meas"><caption>Measured change</caption>
+          <tr><th scope="row">Saved a year</th><td>$150K+</td></tr>
+          <tr><th scope="row">Tool adoption</th><td>+35%</td></tr>
+          <tr><th scope="row">Migration downtime</th><td>0</td></tr>
+        </table>
+      </article>
     </div>
   </section>
 
-  <section id="work">
-    <div class="reveal">
-      <div class="eyebrow">Selected work</div>
-      <h2>Results, not slideware.</h2>
-      <p class="lede">From five years running revenue operations for a global B2B intent-data company.</p>
-    </div>
-    <div class="work">
-      <article class="case reveal"><div><div class="metric">−50%</div><div class="mlabel">lead response time, with 60% less manual data entry</div></div><div><h3>AI lead enrichment &amp; routing at 50K+ leads a month</h3><dl><dt>Problem</dt><dd>Inbound leads waited while they were enriched and assigned by hand, so reps followed up late.</dd><dt>Did</dt><dd>Designed AI enrichment and SLA-based routing into Salesforce, with data-quality governance and pipeline hygiene on top.</dd><dt>Result</dt><dd>50K+ leads a month handled automatically. Response time halved, manual entry down 60%, qualified lead volume up 20%.</dd></dl></div></article>
-      <article class="case reveal"><div><div class="metric">0 → 1</div><div class="mlabel">the company's first AI agent programme, live in 3 regions</div></div><div><h3>Enterprise AI agents, zero to production</h3><dl><dt>Problem</dt><dd>Sellers researched buying groups and competitors by hand, and call insights never made it back into the CRM.</dd><dt>Did</dt><dd>Built agents on Claude, Cassidy and Power Automate for buying-group research, competitive intelligence and sales-call insights, integrated into Salesforce.</dd><dt>Result</dt><dd>In production and adopted across APAC, EMEA and the Americas.</dd></dl></div></article>
-      <article class="case reveal"><div><div class="metric">$2.4M</div><div class="mlabel">sourced pipeline in the first quarter</div></div><div><h3>Sales engagement rollout, pilot to global</h3><dl><dt>Problem</dt><dd>The global sales team needed one prospecting platform it would actually use.</dd><dt>Did</dt><dd>Wrote the business case, ran a 25-user pilot, then led the rollout across three regions with bilingual English and Spanish training.</dd><dt>Result</dt><dd>$2.4M in sourced pipeline in the first quarter.</dd></dl></div></article>
-      <article class="case reveal"><div><div class="metric">$150K+</div><div class="mlabel">saved a year, with 35% better tool adoption</div></div><div><h3>GTM stack transformation &amp; Marketo → HubSpot</h3><dl><dt>Problem</dt><dd>A legacy stack with overlapping tools and low adoption.</dd><dt>Did</dt><dd>Replaced the legacy sales engagement stack globally and migrated marketing automation from Marketo to HubSpot with zero downtime.</dd><dt>Result</dt><dd>$150K+ combined annual savings and 35% better adoption.</dd></dl></div></article>
+  <section id="services">
+    <div class="wrap">
+      <div class="sh">
+        <h2>Fix the process. Then automate it.</h2>
+        <p>Most engagements start with one of these and end up touching all four. I'll tell you on the first call which one your numbers point to.</p>
+      </div>
+      <div class="svc"><h3>Digital transformation for revenue teams</h3><p>I map how leads, deals and data really move through your company, redesign the process, and fit the stack around it. Then I roll it out across teams and regions, with training that sticks.</p><p class="tools">Process redesign · stack audit · change management</p></div>
+      <div class="svc"><h3>RevOps &amp; sales operations</h3><p>Lead routing, territories, enrichment, CRM hygiene, and pipeline reviews and forecasts that update themselves.</p><p class="tools">Routing · forecasting · data quality</p></div>
+      <div class="svc"><h3>Salesforce &amp; HubSpot</h3><p>CRM architecture, migrations, integrations and automation. One source of truth instead of five spreadsheets.</p><p class="tools">Salesforce · HubSpot · Marketo migrations</p></div>
+      <div class="svc"><h3>AI agents &amp; automation</h3><p>Agents for account research, competitive intel, call insights and CRM updates, with a person approving anything that writes to your data.</p><p class="tools">Claude · Power Automate · n8n</p></div>
+      <p class="stack">Also worked in: <span>Apollo.io, Sales Navigator, Gong, Clari, 6sense, Clay, Zapier, Tableau, Python.</span></p>
     </div>
   </section>
 
   <section id="kit">
-    <div class="kit reveal">
+    <div class="wrap kit">
       <div>
-        <div class="eyebrow">Open source</div>
-        <h2 style="font-size:clamp(32px,4vw,48px)">revops-agent-kit</h2>
-        <p class="lede" style="font-size:17px">Three free AI agents for revenue teams: lead routing with handoff notes, a pipeline risk review for your Monday call, and SLA follow-ups that wait for your approval. Zero dependencies, every score explained, and they run as Claude Code skills.</p>
-        <div class="cta-row" style="margin-top:26px"><a class="btn ghost" href="https://github.com/pranaym20/revops-agent-kit">★ Star it on GitHub</a></div>
+        <h2>revops-agent-kit</h2>
+        <p>Stage E of the drawing, free. Three AI agents for revenue teams that run as Claude Code skills, with zero dependencies and every score explained.</p>
+        <ul>
+          <li><b>Lead routing</b> with handoff notes for the rep</li>
+          <li><b>Pipeline risk review</b> for your Monday call</li>
+          <li><b>SLA follow-ups</b> that wait for your approval</li>
+        </ul>
+        <div class="act"><a class="link" href="https://github.com/pranaym20/revops-agent-kit">Read the code and star it on GitHub</a></div>
       </div>
-      <div class="term" aria-label="Example output of the pipeline risk agent">
-        <div class="bar"><i></i><i></i><i></i></div>
+      <div class="term">
+        <div class="cap">Pipeline risk agent, sample output on synthetic data</div>
 <pre><span class="p">$</span> python revops.py risk opportunities.csv
 
-<span class="ok"># Pipeline risk review</span>
-<span class="ok">4 high-risk deals, $439,000 at risk.</span>
+<span class="h"># Pipeline risk review</span>
+<span class="h">4 high-risk deals, $439,000 at risk.</span>
 
-OPP-102 Helix Bank  $210,000  <span class="p">High</span>
+OPP-102 Helix Bank  $210,000  <span class="r">High</span>
   why: close date passed · no next step
        21 days silent · no decision maker
   do:  re-date or close-lost this week
        multi-thread to the economic buyer
-       downgrade Commit → Best Case
-<span class="caret"></span></pre>
+       downgrade Commit → Best Case</pre>
       </div>
     </div>
   </section>
 
-  <section id="tools" style="padding-top:0">
-    <div class="reveal" style="text-align:center"><div class="eyebrow">Stack I work in</div></div>
-    <div class="marquee reveal"><div class="track">
-      <span>Salesforce</span><span>HubSpot</span><span>Marketo</span><span>Apollo.io</span><span>Sales Navigator</span><span>Gong</span><span>Clari</span><span>6sense</span><span>Clay</span><span>Power Automate</span><span>n8n</span><span>Zapier</span><span>Claude</span><span>Tableau</span><span>Python</span>
-      <span aria-hidden="true">Salesforce</span><span aria-hidden="true">HubSpot</span><span aria-hidden="true">Marketo</span><span aria-hidden="true">Apollo.io</span><span aria-hidden="true">Sales Navigator</span><span aria-hidden="true">Gong</span><span aria-hidden="true">Clari</span><span aria-hidden="true">6sense</span><span aria-hidden="true">Clay</span><span aria-hidden="true">Power Automate</span><span aria-hidden="true">n8n</span><span aria-hidden="true">Zapier</span><span aria-hidden="true">Claude</span><span aria-hidden="true">Tableau</span><span aria-hidden="true">Python</span>
-    </div></div>
-  </section>
-
-  <section id="faq" style="padding-top:40px">
-    <div class="reveal"><div class="eyebrow">Straight answers</div><h2>Questions buyers ask me.</h2></div>
-    <div class="faq reveal">
-      <details open><summary>Do I need a new CRM, or better processes?</summary><p>Usually better processes. Most "the CRM is broken" problems I've fixed were really routing problems, definitions nobody agreed on, or data nobody owned. Fix those first. Switching tools on top of a broken process just moves the mess somewhere more expensive.</p></details>
-      <details><summary>Salesforce or HubSpot?</summary><p>HubSpot if you're under ~100 sellers, marketing-led, and want speed. Salesforce if you have complex territories, several business units, or heavy customisation needs. I've run both and migrated between them, so I'll tell you which one your sales motion actually needs.</p></details>
-      <details><summary>What can AI really automate in sales ops today?</summary><p>Research, enrichment, routing, data cleanup, call summaries, CRM updates and report assembly. That's most of the manual middle. It shouldn't decide pricing, territories or forecasts on its own, and anything that writes to your CRM should have a human approving it.</p></details>
-      <details><summary>What's the difference between RevOps and sales ops?</summary><p>Sales ops keeps the sales team running. RevOps puts marketing, sales and customer success on one set of data, definitions and tools, so you can see and fix the whole revenue engine instead of three halves of it.</p></details>
-      <details><summary>How do we start?</summary><p>A free 30-minute call, then a short audit of your process and stack. You get a written plan with the highest-return fixes first. I can build it, or hand it to your team.</p></details>
+  <section id="faq">
+    <div class="wrap">
+      <div class="sh"><h2>Straight answers.</h2><p>What buyers ask me before we work together.</p></div>
+      <dl class="faq">
+        <dt>Do I need a new CRM, or better processes?</dt><dd>Usually better processes. Most "the CRM is broken" problems I've fixed were really routing problems, definitions nobody agreed on, or data nobody owned. Fix those first. Switching tools on top of a broken process just moves the mess somewhere more expensive.</dd>
+        <dt>Salesforce or HubSpot?</dt><dd>HubSpot if you're under ~100 sellers, marketing-led, and want speed. Salesforce if you have complex territories, several business units, or heavy customisation needs. I've run both and migrated between them, so I'll tell you which one your sales motion actually needs.</dd>
+        <dt>What can AI really automate in sales ops today?</dt><dd>Research, enrichment, routing, data cleanup, call summaries, CRM updates and report assembly. That's most of the manual middle. It shouldn't decide pricing, territories or forecasts on its own, and anything that writes to your CRM should have a person approving it.</dd>
+        <dt>What's the difference between RevOps and sales ops?</dt><dd>Sales ops keeps the sales team running. RevOps puts marketing, sales and customer success on one set of data, definitions and tools, so you can see and fix the whole revenue engine instead of three halves of it.</dd>
+        <dt>How do we start?</dt><dd>A free 30-minute call, then a short audit of your process and stack. You get a written plan with the highest-return fixes first. I can build it, or hand it to your team.</dd>
+      </dl>
     </div>
   </section>
 
-  <section style="padding-top:0">
-    <div class="final reveal">
-      <div class="aurora a1" style="opacity:.6"></div>
-      <div style="position:relative">
-        <div class="eyebrow">30 minutes · free</div>
-        <h2>Let's make your sales ops<br>run themselves.</h2>
-        <p class="lede">You'll leave the call with the three fixes I'd make first, whether or not we work together.</p>
-        <a class="btn" href="https://cal.com/pranaymishra/ai-gtm">Book a free call →</a>
+  <section class="close" id="book">
+    <div class="wrap close-grid">
+      <div>
+      <h2>Your revenue engine,<br>drawn next.</h2>
+      <p>Book 30 minutes. You'll leave with the three fixes I'd make first, whether or not we work together.</p>
+      <div class="act">
+        <a class="btn" href="https://cal.com/pranaymishra/ai-gtm">Book a 30-minute call <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        <span class="note">or write to pranaym20@gmail.com</span>
       </div>
+      </div>
+      <svg class="blank" viewBox="0 0 480 300" role="img" aria-label="A blank drawing sheet with an empty title block: client, you; drawn by P. Mishra.">
+        <rect x=".5" y=".5" width="479" height="299" class="frame"/>
+        <path class="tick" d="M120 0v8M240 0v8M360 0v8M120 292v8M240 292v8M360 292v8M0 150h8M472 150h8"/>
+        <g class="tb"><rect x="250" y="216" width="214" height="68"/><line x1="250" y1="242" x2="464" y2="242"/><line x1="357" y1="242" x2="357" y2="284"/>
+          <text x="262" y="234" class="t1">Revenue engine, to be drawn</text>
+          <text x="262" y="258" class="t2">Client</text><text x="262" y="275" class="t1">You</text>
+          <text x="369" y="258" class="t2">Drawn by</text><text x="369" y="275" class="t1">P. Mishra</text></g>
+      </svg>
     </div>
   </section>
-
-  <footer>
-    <span>© 2026 Pranay Mishra · Digital transformation &amp; RevOps consultant · Bangalore, India</span>
-    <span><a href="https://www.linkedin.com/in/pranaymishra/">LinkedIn</a> · <a href="https://github.com/pranaym20">GitHub</a> · <a href="https://x.com/pranaymishra_">X</a> · pranaym20@gmail.com</span>
-  </footer>
 </main>
 
+<footer>
+  <div class="wrap">
+    <span>© 2026 Pranay Mishra · Digital transformation &amp; RevOps consultant · Bangalore, India</span>
+    <nav aria-label="Profiles"><a href="https://www.linkedin.com/in/pranaymishra/">LinkedIn</a><a href="https://github.com/pranaym20">GitHub</a><a href="https://x.com/pranaymishra_">X</a></nav>
+  </div>
+</footer>
+
 <script>
-// scroll progress
-const bar=document.getElementById('progress');
-addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+  const CASES = {
+    A: {t: 'AI lead enrichment & routing', p: '50K+ leads a month enriched and routed automatically: manual entry −60%, response time −50%, qualified leads +20%.', href: '#case-a', a: 'Read the spec sheet'},
+    B: {t: 'Enterprise AI agents, zero to production', p: 'Research, competitive intel and call insights written back into Salesforce, live in three regions.', href: '#case-b', a: 'Read the spec sheet'},
+    C: {t: 'Sales engagement, pilot to global', p: 'A 25-user pilot rolled out across three regions: $2.4M of sourced pipeline in the first quarter.', href: '#case-c', a: 'Read the spec sheet'},
+    D: {t: 'Stack consolidation & Marketo → HubSpot', p: 'Zero-downtime migration and a leaner stack: $150K+ saved a year, tool adoption +35%.', href: '#case-d', a: 'Read the spec sheet'},
+    E: {t: 'Pipeline risk review, open-sourced', p: 'The Monday pipeline call, automated: every risky deal scored with a reason and a next step.', href: '#kit', a: 'See revops-agent-kit'},
+    F: {t: 'Revenue', p: 'Where every stage is meant to end. I can draw yours on a 30-minute call.', href: '#book', a: 'Book a call'}
+  };
+  // node: id, label, sub, detail letter
+  const NODES = [
+    ['cap', 'Lead capture', 'HubSpot', 'D'],
+    ['enr', 'Enrichment', 'AI, every lead', 'A'],
+    ['rte', 'Routing', 'SLA-based', 'A'],
+    ['crm', 'CRM', 'Salesforce', 'A'],
+    ['rev', 'Pipeline review', 'weekly, risk-scored', 'E'],
+    ['won', 'Revenue', 'closed-won', 'F'],
+    ['agt', 'AI agents', 'research · call insights', 'B'],
+    ['out', 'Outbound', 'sales engagement', 'C']
+  ];
+  const MAIN = ['cap', 'enr', 'rte', 'crm', 'rev', 'won'];
 
-const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Two hand-set layouts: wide sheet and narrow column. Coordinates are drawing units.
+  const H = {
+    w: 1200, h: 520,
+    n: {cap:[110,250,130,60], enr:[306,250,130,60], rte:[502,250,130,60], crm:[698,250,130,60], rev:[894,250,130,60], won:[1090,250,130,60], agt:[698,95,160,52], out:[698,410,160,52]},
+    feeds: [['agt','crm','v'], ['out','crm','v']],
+    // callouts: value, label, leader points, text x, value baseline, anchor
+    co: [
+      ['$150K+', 'saved a year', [[110,280],[110,290]], 110, 312, 'middle'],
+      ['50K+', 'leads a month', [[208,250],[208,290]], 222, 310, 'start'],
+      ['+20%', 'qualified leads', [[763,272],[792,302],[802,302]], 808, 299, 'start'],
+      ['3 regions', 'agents in production', [[778,95],[802,95]], 808, 92, 'start'],
+      ['$2.4M', 'pipeline, first quarter', [[778,410],[802,410]], 808, 407, 'start']
+    ],
+    // dimensions: value, label, from, to, offset of the dimension line, orientation
+    dims: [
+      ['−50%', 'lead response time, capture to routed', [45,216], [567,216], 150, 'h'],
+      ['−60%', 'manual data entry', [241,216], [371,216], 190, 'h']
+    ],
+    tb: [968, 424, 212, 78],
+    zones: [6, 3]
+  };
+  const V = {
+    w: 360, h: 930,
+    n: {cap:[180,56,170,52], enr:[180,196,170,52], rte:[180,336,170,52], crm:[180,486,110,52], rev:[180,636,170,52], won:[180,776,170,52], agt:[52,486,92,64], out:[308,486,92,64]},
+    sub: {agt: '3 regions live', out: '$2.4M in Q1'},
+    feeds: [['agt','crm','h'], ['out','crm','h']],
+    co: [
+      ['$150K+', 'saved a year', [[180,118],[188,118]], 194, 122, 'start'],
+      ['50K+', 'leads a month', [[180,118],[172,118]], 166, 122, 'end'],
+      ['−60%', 'manual data entry', [[180,258],[188,258]], 194, 262, 'start'],
+      ['+20%', 'qualified leads', [[180,560],[188,560]], 194, 564, 'start']
+    ],
+    dims: [
+      ['−50%', 'lead response time', [91,30], [91,362], 40, 'v']
+    ],
+    tb: [20, 842, 320, 70],
+    zones: [3, 6]
+  };
 
-// reveal + count-up
-const count=el=>{const to=+el.dataset.to,dec=+(el.dataset.dec||0),pre=el.dataset.prefix||'',suf=el.dataset.suffix||'',t0=performance.now();
-  const tick=t=>{const k=Math.min((t-t0)/1600,1),e=1-Math.pow(1-k,3);el.textContent=pre+(to*e).toFixed(dec)+suf;if(k<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');if(!still)e.target.querySelectorAll('[data-to]').forEach(count);io.unobserve(e.target)}),{threshold:.15});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  const host = document.getElementById('drawing');
+  const notes = document.getElementById('notes');
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const wide = matchMedia('(min-width: 1000px)');
+  let selected = 'A', pinned = false, played = false;
 
-// spotlight + tilt on cards
-if(!still&&matchMedia('(hover:hover)').matches){
-  document.querySelectorAll('.card').forEach(c=>{
-    c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
-      c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%');
-      c.style.transform=`rotateX(${(.5-y)*7}deg) rotateY(${(x-.5)*7}deg) translateY(-4px)`});
-    c.addEventListener('mouseleave',()=>c.style.transform='');
-  });
-}
+  const el = (tag, attrs = {}, parent) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  };
+  const txt = (parent, s, attrs) => { const t = el('text', attrs, parent); t.textContent = s; return t; };
+
+  function render() {
+    const L = wide.matches ? H : V;
+    const anim = !still && !played;
+    host.textContent = '';
+    const svg = el('svg', {viewBox: `0 0 ${L.w} ${L.h}`, 'aria-hidden': 'false', class: anim ? 'draw' : ''}, host);
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', 'Schematic of a revenue engine: lead capture, enrichment, routing, CRM, pipeline review, revenue, with AI agents and outbound feeding the CRM.');
+    const defs = el('defs', {}, svg);
+    const m = el('marker', {id: 'ar', viewBox: '0 0 8 8', refX: 7.5, refY: 4, markerWidth: 8, markerHeight: 8, orient: 'auto-start-reverse'}, defs);
+    el('path', {d: 'M0 0.5 8 4 0 7.5z', class: 'arrow'}, m);
+
+    // sheet frame + zone markers
+    el('rect', {x: 0.5, y: 0.5, width: L.w - 1, height: L.h - 1, class: 'frame'}, svg);
+    if (L.zones) {
+      const [cols, rows] = L.zones;
+      for (let i = 1; i < cols; i++) { const x = L.w / cols * i; el('line', {x1: x, y1: 0, x2: x, y2: 8, class: 'tick'}, svg); el('line', {x1: x, y1: L.h - 8, x2: x, y2: L.h, class: 'tick'}, svg); }
+      if (L === H) for (let i = 0; i < cols; i++) { const x = L.w / cols * (i + .5); txt(svg, i + 1, {x, y: 20, 'text-anchor': 'middle', class: 'zone'}); }
+      for (let i = 1; i < rows; i++) { const y = L.h / rows * i; el('line', {x1: 0, y1: y, x2: 8, y2: y, class: 'tick'}, svg); el('line', {x1: L.w - 8, y1: y, x2: L.w, y2: y, class: 'tick'}, svg); }
+      if (L === H) for (let i = 0; i < rows; i++) { const y = L.h / rows * (i + .5) + 3.5; txt(svg, 'ABC'[i], {x: 14, y, 'text-anchor': 'middle', class: 'zone'}); }
+    }
+
+    const box = id => { const [cx, cy, w, h] = L.n[id]; return {cx, cy, w, h, l: cx - w / 2, r: cx + w / 2, t: cy - h / 2, b: cy + h / 2}; };
+    const horizontal = L === H;
+    let d = 0.15; const step = 0.12;
+
+    // main route edges
+    const edges = el('g', {}, svg);
+    MAIN.slice(0, -1).forEach((id, i) => {
+      const a = box(id), b = box(MAIN[i + 1]);
+      const p = horizontal ? `M${a.r} ${a.cy}H${b.l - 1}` : `M${a.cx} ${a.b}V${b.t - 1}`;
+      el('path', {d: p, class: 'edge', pathLength: 1, 'marker-end': 'url(#ar)', style: `--d:${d + i * step + .1}s`}, edges);
+    });
+    // feeds into CRM
+    L.feeds.forEach(([from, to, dir], i) => {
+      const a = box(from), b = box(to);
+      let p;
+      if (dir === 'v') p = a.cy < b.cy ? `M${a.cx} ${a.b}V${b.t - 1}` : `M${a.cx} ${a.t}V${b.b + 1}`;
+      else p = a.cx < b.cx ? `M${a.r} ${a.cy}H${b.l - 1}` : `M${a.l} ${a.cy}H${b.r + 1}`;
+      const e = el('path', {d: p, class: 'edge feed', pathLength: 1, 'marker-end': 'url(#ar)', style: `--d:${d + 4 * step + .2}s`}, edges);
+      if (anim) e.addEventListener('animationend', () => e.classList.add('done'), {once: true});
+      el('path', {d: p, class: 'sig', pathLength: 1, style: `--t:2.4s;--sd:${1.2 + i * 1.1}s`}, svg);
+    });
+    // signal along the whole main route (drawn under the nodes so it passes "through" each stage)
+    const s = box('cap'), e = box('won');
+    el('path', {d: horizontal ? `M${s.r} ${s.cy}H${e.l}` : `M${s.cx} ${s.b}V${e.t}`, class: 'sig', pathLength: 1, style: '--t:3.6s;--sd:0s'}, svg);
+    el('path', {d: horizontal ? `M${s.r} ${s.cy}H${e.l}` : `M${s.cx} ${s.b}V${e.t}`, class: 'sig', pathLength: 1, style: '--t:3.6s;--sd:1.8s'}, svg);
+
+    // nodes
+    const order = [...MAIN, 'agt', 'out'];
+    NODES.forEach(([id, label, sub, det]) => {
+      const b = box(id);
+      const i = order.indexOf(id);
+      const g = el('g', {class: 'node' + (id === 'won' ? ' end' : ''), 'data-c': det, tabindex: 0, role: 'button', 'aria-label': `${label}: ${CASES[det].t}`, style: `--d:${d + Math.min(i, 5) * step}s`}, svg);
+      el('rect', {x: b.l, y: b.t, width: b.w, height: b.h, pathLength: 1}, g);
+      const tall = b.h > 56;
+      txt(g, label, {x: b.cx, y: b.cy - (tall ? 6 : 3), 'text-anchor': 'middle', class: 'lbl'});
+      txt(g, (L.sub && L.sub[id]) || sub, {x: b.cx, y: b.cy + (tall ? 14 : 15), 'text-anchor': 'middle', class: 'sub'});
+      const dg = el('g', {class: 'det'}, g);
+      el('circle', {cx: b.r, cy: b.t, r: 9}, dg);
+      txt(dg, det, {x: b.r, y: b.t + 3.7, 'text-anchor': 'middle'});
+      g.addEventListener('mouseenter', () => { if (!pinned) select(det); });
+      g.addEventListener('focus', () => select(det));
+      g.addEventListener('click', () => { pinned = true; select(det); });
+      g.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pinned = true; select(det); notes.querySelector('a').focus(); } });
+    });
+
+    // callouts
+    L.co.forEach(([v, lab, pts, x, y, anchor], i) => {
+      const dd = `--d:${d + 6 * step + i * .05}s`;
+      el('path', {d: 'M' + pts.map(p => p.join(' ')).join('L'), class: 'leader', pathLength: 1, style: dd}, svg);
+      el('circle', {cx: pts[0][0], cy: pts[0][1], r: 2, class: 'leader-dot', style: dd}, svg);
+      const vy = anchor === 'middle' && pts[1][1] > pts[0][1] ? y : y;
+      txt(svg, v, {x, y: vy, 'text-anchor': anchor, class: 'val', style: dd});
+      txt(svg, lab, {x, y: vy + 18, 'text-anchor': anchor, class: 'cl', style: dd});
+    });
+
+    // true dimensions: extension lines, slash terminators, value set on the line
+    L.dims.forEach(([v, lab, a, b, off, o], i) => {
+      const dd = `--d:${d + 6 * step + .1 + i * .08}s`, g = el('g', {class: 'dim', style: dd}, svg);
+      const P = (pts) => el('path', {d: 'M' + pts.map(p => p.join(' ')).join('L'), class: 'leader', pathLength: 1, style: dd}, g);
+      if (o === 'h') {
+        P([a, [a[0], off - 7]]); P([b, [b[0], off - 7]]); P([[a[0], off], [b[0], off]]);
+        [a[0], b[0]].forEach(x => P([[x - 4, off + 4], [x + 4, off - 4]]));
+        const t = txt(g, '', {x: (a[0] + b[0]) / 2, y: off - 8, 'text-anchor': 'middle', class: 'cl', style: dd});
+        const tv = el('tspan', {class: 'dv'}, t); tv.textContent = v + ' ';
+        const tl = el('tspan', {}, t); tl.textContent = lab;
+      } else {
+        P([a, [off - 7, a[1]]]); P([b, [off - 7, b[1]]]); P([[off, a[1]], [off, b[1]]]);
+        [a[1], b[1]].forEach(y => P([[off - 4, y + 4], [off + 4, y - 4]]));
+        const my = (a[1] + b[1]) / 2;
+        const t = txt(g, '', {x: off - 8, y: my, 'text-anchor': 'middle', transform: `rotate(-90 ${off - 8} ${my})`, class: 'cl', style: dd});
+        const tv = el('tspan', {class: 'dv'}, t); tv.textContent = v + ' ';
+        const tl = el('tspan', {}, t); tl.textContent = lab;
+      }
+    });
+
+    // title block
+    if (L.tb) {
+      const [x, y, w, h] = L.tb, tg = el('g', {class: 'tb', style: `--d:${d + 8 * step}s`}, svg);
+      el('rect', {x, y, width: w, height: h}, tg);
+      el('line', {x1: x, y1: y + 30, x2: x + w, y2: y + 30}, tg);
+      el('line', {x1: x + w / 2, y1: y + 30, x2: x + w / 2, y2: y + h}, tg);
+      txt(tg, 'Revenue engine, as built', {x: x + 12, y: y + 20, class: 't1'});
+      txt(tg, 'Drawn by', {x: x + 12, y: y + 47, class: 't2'});
+      txt(tg, 'P. Mishra', {x: x + 12, y: y + 64, class: 't1'});
+      txt(tg, 'Scale', {x: x + w / 2 + 12, y: y + 47, class: 't2'});
+      txt(tg, 'Not to scale', {x: x + w / 2 + 12, y: y + 64, class: 't1'});
+    }
+
+    if (anim) {
+      played = true;
+      setTimeout(() => svg.classList.add('live'), 1900);
+    } else if (!still) svg.classList.add('live');
+    select(selected, true);
+  }
+
+  function select(c, quiet) {
+    selected = c;
+    host.querySelectorAll('.node').forEach(n => {
+      const on = n.dataset.c === c;
+      n.classList.toggle('on', on);
+      n.setAttribute('aria-pressed', on);
+    });
+    const x = CASES[c];
+    if (notes.dataset.c === c) return;
+    notes.dataset.c = c;
+    notes.innerHTML = '';
+    const dl = document.createElement('span'); dl.className = 'dl'; dl.textContent = c; dl.setAttribute('aria-hidden', 'true');
+    const h = document.createElement('h3'); h.textContent = x.t;
+    const p = document.createElement('p'); p.textContent = x.p;
+    const a = document.createElement('a'); a.href = x.href; a.className = 'more'; a.textContent = x.a;
+    a.insertAdjacentHTML('beforeend', ' <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>');
+    const body = document.createElement('div'); body.append(h, p, a);
+    notes.append(dl, body);
+  }
+
+  render();
+  wide.addEventListener('change', render);
+  // a tap outside the drawing releases a pinned stage
+  document.addEventListener('click', ev => { if (!host.contains(ev.target) && !notes.contains(ev.target)) pinned = false; });
+})();
 </script>
 </body>
 </html>
