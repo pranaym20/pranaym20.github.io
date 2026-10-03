@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>if(matchMedia("(prefers-reduced-motion: no-preference)").matches)document.documentElement.classList.add("m")</script>
 <title>Pranay Mishra | Digital Transformation & RevOps Consultant (Salesforce, HubSpot, AI)</title>
 <meta name="description" content="Pranay Mishra is a digital transformation and RevOps consultant in Bangalore, India. 10+ years in revenue systems: Salesforce, HubSpot, AI agents and sales operations automation for B2B teams.">
 <link rel="canonical" href="https://pranaym20.github.io/">
@@ -143,8 +144,9 @@ h1{font-size:clamp(38px,4.3vw,60px);line-height:1.02;letter-spacing:-.035em;max-
 .draw .edge,.draw .leader{stroke-dasharray:1;stroke-dashoffset:1;animation:plot .7s cubic-bezier(.3,.7,.2,1) forwards;animation-delay:var(--d,0s)}
 .draw .node rect{stroke-dasharray:1;stroke-dashoffset:1;animation:plot .7s cubic-bezier(.3,.7,.2,1) forwards,fill .35s ease-out both;animation-delay:var(--d,0s),calc(var(--d,0s) + .55s)}
 @keyframes fill{from{fill:transparent}}
+.draw .arrow{animation:fade .4s ease-out 1.7s both}
 .draw .edge.feed{stroke-dasharray:1;}
-.draw .node text,.draw .node .det,.draw .val,.draw .cl,.draw .dim text,.draw .arrow,.draw .leader-dot,.draw .tb{animation:fade .5s ease-out both;animation-delay:calc(var(--d,0s) + .35s)}
+.draw .node text,.draw .node .det,.draw .val,.draw .cl,.draw .dim text,.draw .leader-dot,.draw .tb{animation:fade .5s ease-out both;animation-delay:calc(var(--d,0s) + .35s)}
 .draw .edge.feed.done{stroke-dasharray:5 5}
 .live .sig{opacity:1;animation:run var(--t,3.2s) linear infinite;animation-delay:var(--sd,0s)}
 @keyframes plot{to{stroke-dashoffset:0}}
@@ -213,7 +215,7 @@ h2{font-size:clamp(30px,3.6vw,46px);line-height:1.06;letter-spacing:-.03em}
 .faq{margin:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);border-top:1px solid var(--rule)}
 .faq dt,.faq dd{padding-block:24px;border-bottom:1px solid var(--rule);margin:0}
 .faq dt{font:600 19px/1.35 var(--display);letter-spacing:-.01em;padding-right:40px}
-.faq dd{color:var(--muted);max-width:62ch}
+.faq dd{color:var(--muted);padding-right:clamp(0px,8vw,120px)}
 
 /* close */
 .close{padding-block:clamp(88px,13vw,150px)}
@@ -228,6 +230,84 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 
 footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--text)}
 footer nav{display:flex;gap:20px}
 
+/* ---------- motion layer (only under .m, so no-JS and reduced-motion see everything) ---------- */
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.m .nav{animation:fade .6s ease-out both}
+.m h1{visibility:hidden}
+.m h1.split{visibility:visible}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
+.w>span{display:inline-block}
+.m h1 .w>span{transform:translateY(108%);filter:blur(6px);animation:rise 1s cubic-bezier(.16,1,.3,1) forwards;animation-delay:calc(var(--i)*55ms + .12s)}
+@keyframes rise{to{transform:none;filter:none}}
+.m .who{animation:up .9s cubic-bezier(.16,1,.3,1) .02s both}
+.m .mast-grid>div{animation:up 1s cubic-bezier(.16,1,.3,1) .55s both}
+
+/* nav: scroll progress + section indicator */
+.prog{position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--signal);transform:scaleX(var(--p,0));transform-origin:left;pointer-events:none}
+.nav ul{position:relative}
+.nav ul a.cur{color:var(--text)}
+.ind{position:absolute;left:0;bottom:-12px;height:1px;width:1px;background:var(--text);transform-origin:left;opacity:0;transition:transform .5s cubic-bezier(.16,1,.3,1),opacity .3s;pointer-events:none}
+
+/* drafting crosshair on the sheet */
+.xh{opacity:0;transition:opacity .2s;pointer-events:none}
+.xh.on{opacity:1}
+.xl{stroke:var(--signal);stroke-width:.75;stroke-dasharray:2 4;opacity:.6}
+.xt rect{fill:var(--bg);stroke:var(--stroke)}
+.sheet .xt text{font-size:11px;fill:var(--text)}
+
+/* rules plot in, content rises from behind them */
+section,.spec,.svc{position:relative}
+.m section{border-top-color:transparent}
+.m section::before,.m .spec::before,.m .svc::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:var(--rule);transform:scaleX(0);transform-origin:left}
+.m section.in::before,.m .spec.in::before,.m .svc.in::before{animation:rule 1.3s cubic-bezier(.16,1,.3,1) both}
+@keyframes rule{from{transform:scaleX(0)}to{transform:none}}
+@keyframes reveal{from{opacity:0;transform:translateY(22px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+@keyframes rowin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.m .spec,.m .svc{border-top-color:transparent}
+.m .rise{opacity:0}
+.m .in .rise,.m .rise.in{animation:reveal 1s cubic-bezier(.16,1,.3,1) var(--k,0s) both}
+.m .spec>*,.m .svc>*,.m .faq dt,.m .faq dd,.m .kit li{opacity:0}
+.m .spec.in>*,.m .svc.in>*,.m .faq .in,.m .kit ul.in li{animation:rowin .9s cubic-bezier(.16,1,.3,1) calc(var(--k,0)*90ms + 150ms) both}
+.spec>:nth-child(2),.svc>:nth-child(2),.kit li:nth-child(2){--k:1}
+.spec>:nth-child(3),.svc>:nth-child(3),.kit li:nth-child(3){--k:2}
+.m .faq dd.in{animation-delay:240ms}
+
+/* hover: a pen traces the row's rule */
+.spec::after,.svc::after{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:var(--signal);transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.16,1,.3,1);pointer-events:none}
+.spec:hover::after,.svc:hover::after{transform:none}
+.spec .tag{transition:border-color .3s,color .3s,background .3s}
+.spec:hover .tag{border-color:var(--signal);color:var(--signal)}
+.svc h3{transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.svc:hover h3{transform:translateX(6px)}
+
+/* terminal typing */
+.m .term .ln{opacity:0;transition:opacity .25s}
+.m .term .ln.on{opacity:1}
+.caret{display:inline-block;width:7px;height:1.05em;background:var(--signal);vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* tools tape */
+.marq{margin-top:36px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 28px;align-items:center}
+.marq .mlabel{color:var(--faint);font-size:14px}
+.mtrack{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mtrack ul{display:flex;flex-shrink:0;list-style:none;margin:0;padding:0;animation:marq 45s linear infinite}
+.mtrack:hover ul{animation-play-state:paused}
+.mtrack li{position:relative;padding:0 24px;color:var(--muted);white-space:nowrap;font-size:15px;transition:color .2s}
+.mtrack li:hover{color:var(--text)}
+.mtrack li::before{content:"";position:absolute;left:-4px;top:calc(50% - 4px);width:8px;height:8px;background:linear-gradient(var(--stroke-hi),var(--stroke-hi)) center/1px 100% no-repeat,linear-gradient(var(--stroke-hi),var(--stroke-hi)) center/100% 1px no-repeat}
+@keyframes marq{to{transform:translateX(-100%)}}
+
+/* closing sheet sketches the visitor's system */
+.blank .ghost rect{fill:none;stroke:var(--stroke-hi);stroke-dasharray:4 4}
+.blank .ghost rect.q{stroke:var(--signal);animation:ants 1.4s linear infinite}
+.blank .ghost path{fill:none;stroke:var(--stroke-hi)}
+.blank .ghost text{font-size:12px;fill:var(--faint)}
+.blank .ghost text.qt{fill:var(--text);font-weight:500}
+@keyframes ants{to{stroke-dashoffset:-16}}
+.m .blank .ghost{clip-path:inset(0 100% 0 0)}
+.m .blank.in .ghost{animation:sweep 1.8s cubic-bezier(.65,0,.35,1) .35s both}
+@keyframes sweep{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+
 @media (max-width:999px){
   .sheet-in{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:28px;align-items:start}
   .notes{position:sticky;top:76px;left:auto;width:auto;min-height:0;padding:18px}
@@ -237,7 +317,7 @@ footer nav{display:flex;gap:20px}
   .svc .tools{grid-column:2}
 }
 @media (max-width:760px){
-  .nav ul li:not(:last-child){display:none}
+  .nav ul li:not(:last-of-type){display:none}
   .mast-grid,.sh,.kit,.close-grid{grid-template-columns:minmax(0,1fr)}
   .sheet-in{grid-template-columns:minmax(0,1fr)}
   #drawing svg{max-width:420px;margin-inline:auto}
@@ -248,17 +328,22 @@ footer nav{display:flex;gap:20px}
   .faq{grid-template-columns:minmax(0,1fr)}
   .faq dt{border-bottom:0;padding-bottom:8px;padding-right:0}
   .faq dd{padding-top:0}
+  .marq{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .sig{display:none}
+  .mtrack{-webkit-mask-image:none;mask-image:none;flex-wrap:wrap}
+  .mtrack ul{flex-wrap:wrap;row-gap:6px}
+  .mtrack ul[aria-hidden]{display:none}
 }
 </style>
 </head>
 <body>
 
 <header class="nav">
+  <span class="prog" aria-hidden="true"></span>
   <div class="wrap">
     <a class="me" href="#top">Pranay Mishra</a>
     <ul>
@@ -382,7 +467,7 @@ footer nav{display:flex;gap:20px}
       <div class="svc"><h3>RevOps &amp; sales operations</h3><p>Lead routing, territories, enrichment, CRM hygiene, and pipeline reviews and forecasts that update themselves.</p><p class="tools">Routing · forecasting · data quality</p></div>
       <div class="svc"><h3>Salesforce &amp; HubSpot</h3><p>CRM architecture, migrations, integrations and automation. One source of truth instead of five spreadsheets.</p><p class="tools">Salesforce · HubSpot · Marketo migrations</p></div>
       <div class="svc"><h3>AI agents &amp; automation</h3><p>Agents for account research, competitive intel, call insights and CRM updates, with a person approving anything that writes to your data.</p><p class="tools">Claude · Power Automate · n8n</p></div>
-      <p class="stack">Also worked in: <span>Apollo.io, Sales Navigator, Gong, Clari, 6sense, Clay, Zapier, Tableau, Python.</span></p>
+      <div class="marq"><p class="mlabel">Tools I work in</p><div class="mtrack"><ul><li>Salesforce</li><li>HubSpot</li><li>Marketo</li><li>Apollo.io</li><li>Sales Navigator</li><li>Gong</li><li>Clari</li><li>6sense</li><li>Clay</li><li>Power Automate</li><li>n8n</li><li>Zapier</li><li>Claude</li><li>Tableau</li><li>Python</li></ul><ul aria-hidden="true"><li>Salesforce</li><li>HubSpot</li><li>Marketo</li><li>Apollo.io</li><li>Sales Navigator</li><li>Gong</li><li>Clari</li><li>6sense</li><li>Clay</li><li>Power Automate</li><li>n8n</li><li>Zapier</li><li>Claude</li><li>Tableau</li><li>Python</li></ul></div></div>
     </div>
   </section>
 
@@ -441,6 +526,11 @@ OPP-102 Helix Bank  $210,000  <span class="r">High</span>
       <svg class="blank" viewBox="0 0 480 300" role="img" aria-label="A blank drawing sheet with an empty title block: client, you; drawn by P. Mishra.">
         <rect x=".5" y=".5" width="479" height="299" class="frame"/>
         <path class="tick" d="M120 0v8M240 0v8M360 0v8M120 292v8M240 292v8M360 292v8M0 150h8M472 150h8"/>
+        <g class="ghost" aria-hidden="true">
+          <rect x="36" y="70" width="104" height="44"/><rect x="188" y="70" width="104" height="44" class="q"/><rect x="340" y="70" width="104" height="44"/>
+          <path d="M140 92h44M178 88l6 4-6 4M292 92h44M330 88l6 4-6 4"/>
+          <text x="88" y="96" text-anchor="middle">Your leads</text><text x="240" y="96" text-anchor="middle" class="qt">The fix</text><text x="392" y="96" text-anchor="middle">Revenue</text>
+        </g>
         <g class="tb"><rect x="250" y="216" width="214" height="68"/><line x1="250" y1="242" x2="464" y2="242"/><line x1="357" y1="242" x2="357" y2="284"/>
           <text x="262" y="234" class="t1">Revenue engine, to be drawn</text>
           <text x="262" y="258" class="t2">Client</text><text x="262" y="275" class="t1">You</text>
@@ -524,7 +614,24 @@ OPP-102 Helix Bank  $210,000  <span class="r">High</span>
   const notes = document.getElementById('notes');
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const wide = matchMedia('(min-width: 1000px)');
-  let selected = 'A', pinned = false, played = false;
+  let selected = 'A', pinned = false, played = false, touched = false;
+  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  // number ticker: counts the numeric part, restores the exact original text at the end
+  const tick = (nodes, dur = 1400) => {
+    if (still) return;
+    nodes.forEach(n => {
+      const full = n.textContent, m = full.match(/^([^\d]*)(\d+(?:\.\d+)?)([\s\S]*)$/);
+      if (!m || +m[2] === 0) return;
+      const [, pre, num, suf] = m, dec = (num.split('.')[1] || '').length, to = +num, t0 = performance.now();
+      const f = t => {
+        const k = Math.min((t - t0) / dur, 1), e = k === 1 ? 1 : 1 - Math.pow(2, -10 * k);
+        n.textContent = k < 1 ? pre + (to * e).toFixed(dec) + suf : full;
+        if (k < 1) requestAnimationFrame(f);
+      };
+      requestAnimationFrame(f);
+    });
+  };
 
   const el = (tag, attrs = {}, parent) => {
     const e = document.createElementNS(NS, tag);
@@ -557,7 +664,7 @@ OPP-102 Helix Bank  $210,000  <span class="r">High</span>
 
     const box = id => { const [cx, cy, w, h] = L.n[id]; return {cx, cy, w, h, l: cx - w / 2, r: cx + w / 2, t: cy - h / 2, b: cy + h / 2}; };
     const horizontal = L === H;
-    let d = 0.15; const step = 0.12;
+    let d = anim ? 0.7 : 0.15; const step = 0.12;
 
     // main route edges
     const edges = el('g', {}, svg);
@@ -594,9 +701,9 @@ OPP-102 Helix Bank  $210,000  <span class="r">High</span>
       const dg = el('g', {class: 'det'}, g);
       el('circle', {cx: b.r, cy: b.t, r: 9}, dg);
       txt(dg, det, {x: b.r, y: b.t + 3.7, 'text-anchor': 'middle'});
-      g.addEventListener('mouseenter', () => { if (!pinned) select(det); });
-      g.addEventListener('focus', () => select(det));
-      g.addEventListener('click', () => { pinned = true; select(det); });
+      g.addEventListener('mouseenter', () => { touched = true; if (!pinned) select(det); });
+      g.addEventListener('focus', () => { touched = true; select(det); });
+      g.addEventListener('click', () => { touched = pinned = true; select(det); });
       g.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pinned = true; select(det); notes.querySelector('a').focus(); } });
     });
 
@@ -643,9 +750,29 @@ OPP-102 Helix Bank  $210,000  <span class="r">High</span>
       txt(tg, 'Not to scale', {x: x + w / 2 + 12, y: y + 64, class: 't1'});
     }
 
+    // drafting crosshair with a grid-reference readout (wide sheet, real pointer only)
+    if (horizontal && fine && !still) {
+      const ch = el('g', {class: 'xh', 'aria-hidden': 'true'}, svg);
+      const hl = el('line', {x1: 0, x2: L.w, class: 'xl'}, ch), vl = el('line', {y1: 0, y2: L.h, class: 'xl'}, ch);
+      const tag = el('g', {class: 'xt'}, ch); el('rect', {width: 104, height: 22}, tag);
+      const tt = txt(tag, '', {x: 9, y: 15});
+      const [cols, rows] = L.zones;
+      svg.addEventListener('pointermove', ev => {
+        const p = new DOMPoint(ev.clientX, ev.clientY).matrixTransform(svg.getScreenCTM().inverse());
+        const x = Math.max(0, Math.min(L.w, p.x)), y = Math.max(0, Math.min(L.h, p.y));
+        hl.setAttribute('y1', y); hl.setAttribute('y2', y); vl.setAttribute('x1', x); vl.setAttribute('x2', x);
+        const zc = Math.min(cols, Math.floor(x / (L.w / cols)) + 1), zr = 'ABC'[Math.min(rows - 1, Math.floor(y / (L.h / rows)))];
+        tt.textContent = `${zr}${zc} · ${Math.round(x)}, ${Math.round(y)}`;
+        tag.setAttribute('transform', `translate(${x > L.w - 130 ? x - 116 : x + 12} ${y > L.h - 40 ? y - 34 : y + 12})`);
+        ch.classList.add('on');
+      });
+      svg.addEventListener('pointerleave', () => ch.classList.remove('on'));
+    }
+
     if (anim) {
       played = true;
-      setTimeout(() => svg.classList.add('live'), 1900);
+      setTimeout(() => tick(svg.querySelectorAll('.val, .dv')), (d + 6 * step + .3) * 1000);
+      setTimeout(() => svg.classList.add('live'), 2500);
     } else if (!still) svg.classList.add('live');
     select(selected, true);
   }
@@ -668,10 +795,105 @@ OPP-102 Helix Bank  $210,000  <span class="r">High</span>
     a.insertAdjacentHTML('beforeend', ' <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>');
     const body = document.createElement('div'); body.append(h, p, a);
     notes.append(dl, body);
+    if (!quiet && !still) {
+      body.animate([{opacity: 0, transform: 'translateY(8px)', filter: 'blur(3px)'}, {opacity: 1, transform: 'none', filter: 'none'}], {duration: 420, easing: 'cubic-bezier(.16,1,.3,1)'});
+      dl.animate([{transform: 'scale(.6)'}, {transform: 'scale(1)'}], {duration: 380, easing: 'cubic-bezier(.16,1,.3,1)'});
+    }
   }
 
   render();
   wide.addEventListener('change', render);
+
+  // attract mode: until someone touches the drawing, walk through the stages while it is on screen
+  if (!still) {
+    let visible = true;
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(host);
+    notes.addEventListener('pointerenter', () => { touched = true; });
+    const ORDER = ['A', 'B', 'C', 'D', 'E', 'F'];
+    setTimeout(() => setInterval(() => {
+      if (touched || pinned || !visible || document.hidden) return;
+      select(ORDER[(ORDER.indexOf(selected) + 1) % ORDER.length]);
+    }, 3600), 2600);
+  }
+
+  // ---------- page motion ----------
+  if (!still) {
+    // hero words rise out of a mask
+    const h1 = document.querySelector('h1');
+    let i = 0;
+    h1.innerHTML = h1.textContent.trim().split(/\s+/).map(w => `<span class="w"><span style="--i:${i++}">${w}</span></span>`).join(' ');
+    h1.classList.add('split');
+
+    // reveals: section rules plot, headings rise, rows stagger, numbers tick
+    document.querySelectorAll('.sh > *, .kit > div:first-child > :not(ul), .close-grid > div > *, .term, .blank').forEach(n => {
+      n.classList.add('rise');
+      const sib = [...n.parentElement.children].indexOf(n);
+      n.style.setProperty('--k', `${.15 + sib * .12}s`);
+    });
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const t = e.target;
+      t.classList.add('in');
+      if (t.matches('.faq dt') && t.nextElementSibling) t.nextElementSibling.classList.add('in');
+      if (t.matches('.spec')) setTimeout(() => tick(t.querySelectorAll('.meas td')), 450);
+      if (t.matches('.term')) type(t);
+      io.unobserve(t);
+    }), {threshold: .12, rootMargin: '0px 0px -6% 0px'});
+    document.querySelectorAll('section, .spec, .svc, .faq dt, .kit ul, .term, .blank, .rise').forEach(n => io.observe(n));
+
+    // terminal: type the command, then print the output line by line
+    function type(term) {
+      const pre = term.querySelector('pre'), lines = pre.innerHTML.split('\n');
+      const cmd = 'python revops.py risk opportunities.csv';
+      pre.innerHTML = `<span class="ln on"><span class="p">$</span> <span class="cmd"></span><span class="caret"></span>\n</span>` +
+        lines.slice(1).map(l => `<span class="ln">${l}\n</span>`).join('');
+      const out = pre.querySelector('.cmd'), rest = [...pre.querySelectorAll('.ln')].slice(1);
+      let c = 0;
+      const key = setInterval(() => {
+        out.textContent = cmd.slice(0, ++c);
+        if (c < cmd.length) return;
+        clearInterval(key);
+        setTimeout(() => {
+          pre.querySelector('.caret').remove();
+          rest.forEach((ln, j) => setTimeout(() => {
+            ln.classList.add('on');
+            if (j === rest.length - 1) ln.insertAdjacentHTML('beforeend', '<span class="caret"></span>');
+          }, 90 * j));
+        }, 350);
+      }, 32);
+    }
+
+    // nav: scroll progress + sliding section indicator
+    const nav = document.querySelector('.nav'), ul = nav.querySelector('ul');
+    const ind = document.createElement('span'); ind.className = 'ind'; ind.setAttribute('aria-hidden', 'true'); ul.append(ind);
+    let ticking = false;
+    addEventListener('scroll', () => {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(() => {
+        const h = document.documentElement;
+        nav.style.setProperty('--p', (h.scrollTop / (h.scrollHeight - h.clientHeight)).toFixed(4));
+        ticking = false;
+      });
+    }, {passive: true});
+    const links = [...ul.querySelectorAll('a[href^="#"]')];
+    const secIO = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const a = links.find(l => l.getAttribute('href') === '#' + e.target.id);
+      links.forEach(l => l.classList.toggle('cur', l === a));
+      if (a && a.offsetParent) { ind.style.transform = `translateX(${a.offsetLeft}px) scaleX(${a.offsetWidth})`; ind.style.opacity = 1; }
+      else ind.style.opacity = 0;
+    }), {rootMargin: '-45% 0px -50% 0px'});
+    ['work', 'services', 'kit', 'faq', 'book'].forEach(id => secIO.observe(document.getElementById(id)));
+
+    // magnetic primary buttons
+    if (fine) document.querySelectorAll('.btn:not(.sm)').forEach(b => {
+      b.addEventListener('pointermove', ev => {
+        const r = b.getBoundingClientRect();
+        b.style.transform = `translate(${((ev.clientX - r.left) / r.width - .5) * 12}px, ${((ev.clientY - r.top) / r.height - .5) * 8}px)`;
+      });
+      b.addEventListener('pointerleave', () => { b.style.transform = ''; });
+    });
+  }
   // a tap outside the drawing releases a pinned stage
   document.addEventListener('click', ev => { if (!host.contains(ev.target) && !notes.contains(ev.target)) pinned = false; });
 })();
